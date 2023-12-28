@@ -1,0 +1,68 @@
+.TH INTERNSCTL 1 "December 2023" "v0.1.0" "internsctl Manual"
+
+.SH NAME
+internsctl \- custom Linux command
+
+.SH SYNOPSIS
+\fBinternsctl\fR \fIcommand\fR [\fIoptions\fR] [\fIarguments\fR]
+
+.SH DESCRIPTION
+\fBinternsctl\fR is a custom Linux command created for specific operations.
+
+.SH COMMANDS
+.TP
+.B cpu
+.TP
+.B memory
+.TP
+.B user
+.TP
+.B file
+
+.SH OPTIONS
+.TP
+.B \-\-help
+Show help information.
+
+.TP
+.B \-\-version
+Show version information.
+
+.TP
+.B \-h, \-\-size
+Specify file size option for file command.
+
+.TP
+.B \-p, \-\-permissions
+Specify file permissions option for file command.
+
+.TP
+.B \-o, \-\-owner
+Specify file owner option for file command.
+
+.TP
+.B \-m, \-\-last-modified
+Specify last modified option for file command.
+
+.SH EXAMPLES
+\fBinternsctl cpu getinfo\fR
+Display CPU information.
+
+\fBinternsctl memory getinfo\fR
+Display memory information.
+
+\fBinternsctl user create <username>\fR
+Create a new user.
+
+\fBinternsctl user list\fR
+List all regular users.
+
+\fBinternsctl user list \-\-sudo\-only\fR
+List users with sudo permissions.
+
+\fBinternsctl file getinfo <file\-name>\fR
+Get information about a file.
+
+\fBinternsctl file getinfo \-\-size <file\-name>\fR
+Get file size.
+
